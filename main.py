@@ -20,6 +20,7 @@ def main()->none:
     # VARIABLES GLOBALES
     entrada: bool = True
     """ Valida si se selecciono una opcion valida del menu inicial"""
+    
     inventario:list[dict[str,str | int]] = [] 
     """
     Estructura del inventario
@@ -41,12 +42,13 @@ def main()->none:
     while entrada == True:   
 
         ventana(["Sistema de Inventario",
-             "","Opciones",
-             "1-. Nuevo Registro",
-             "2-. Eliminar un Registro",
-             "3-. Ver Registros",
-             "4-.SALIR[x]"
-             ""])
+                 "","Opciones",
+                 "1-. Nuevo Registro",
+                 "2-. Eliminar un Registro",
+                 "3-. Ver Registros",
+                 "4-.SALIR[x]",
+                 ""
+                 ])
 
         opcion = int(input("Ingrese el numero de una opcion:")) 
         entrada = seleccionar_menu(opcion)
