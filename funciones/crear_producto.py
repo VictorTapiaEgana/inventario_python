@@ -1,8 +1,9 @@
 from ui.ventana import ventana
+from funciones.inventario import guardar_inventario
 
 def crear_registro()->none:
     """Funcion para crear un nuevo registro en el inventario"""
-
+    
     #Inicializacio de variables 
     nombre:str = ''
     stock:int = 0
@@ -78,8 +79,8 @@ def crear_registro()->none:
         "descripcion":descr,
         "valor":valor
     }
-
-    print(producto_nuevo)
+    
+    guardar_inventario(producto_nuevo)
 
     input("PRODUCTO CREADO!!!!! \nPresione cualquier tecla para continuar...")
 

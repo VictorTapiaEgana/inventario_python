@@ -24,13 +24,10 @@ def main()->none:
     #********************* VARIABLES GLOBALES******************
     #Valida si se selecciono una opcion valida del menu inicial
     entrada: bool = True
-    inventario:list[dict[str,str | int]] = cargar_inventario()
-    #**********************************************************
-    
-    
-    
+    # inventario:list[dict[str,str | int]] = cargar_inventario()
+    #**********************************************************    
 
-    print(inventario)
+
     
     
 
