@@ -75,9 +75,9 @@ def crear_registro()->none:
 
     producto_nuevo  = {
         "nombre":nombre,
-        "stock":stock,
-        "descripcion":descr,
-        "valor":valor
+        "stock":stock,        
+        "precio":valor,
+        "descripcion":descr
     }
     
     guardar_inventario(producto_nuevo)

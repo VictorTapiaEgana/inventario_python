@@ -36,9 +36,9 @@ def main()->none:
         menu = (
             {"texto": "Sistema de Inventario", "align": "center"},
             {"texto": "Opciones", "align": "center"},
-            {"texto": "1-. Nuevo Registro", "align": "left"},
-            {"texto": "2-. Eliminar un Registro", "align": "left"},
-            {"texto": "3-. Ver Registros", "align": "left"},
+            {"texto": "1-. Crear Producto", "align": "left"},
+            {"texto": "2-. Eliminar un producto", "align": "left"},
+            {"texto": "3-. Ver Inventario", "align": "left"},
             {"texto": "4-. SALIR [x]", "align": "left"},
             {"texto": "", "align": "center"}
         )        

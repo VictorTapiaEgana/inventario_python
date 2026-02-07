@@ -58,11 +58,5 @@
         "stock": 45,
         "precio": 2200,
         "descripcion": "Empanada tradicional chilena de pino"
-    },
-    {
-        "nombre": "TEST",
-        "stock": 12,
-        "descripcion": "SDSDSDSDSD",
-        "valor": 1000
-    }
+    } 
 ]
