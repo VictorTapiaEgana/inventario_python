@@ -11,6 +11,7 @@ def ventana(menu:dict[str,str])->none():
     print(f"╔{'═' * (ancho-2)}╗")
 
     for linea in menu:
+        
         contenido = linea['texto']
         alineacion = linea['align']
 
