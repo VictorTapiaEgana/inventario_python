@@ -6,13 +6,18 @@ def crear_registro()->none:
     #Inicializacio de variables 
     nombre:str = ''
     stock:int = 0
-
-    ventana(["Sistema de inventario",
-             "",
-             "CREAR NUEVO REGISTRO"])
+    descr:str = ''
+    valor:int = 0
+    
+    menu = (
+            {"texto":"Sistema de inventario","align":"center"},
+            {"texto":"", "align":"center"},
+            {"texto":"CREAR NUEVO REGISTRO", "align":"center"}
+    )
+    ventana(menu)
 
     while not nombre or nombre.isspace():
-        """ validacio del nombre del producto"""
+        """ Validacio del nombre del producto """
 
         nombre = input("Nombre del producto: ")
 
@@ -39,7 +44,42 @@ def crear_registro()->none:
             print("El stock debe ser numero mayor a cero")
             stock = None        
 
+    while not descr or descr.isspace():
+        """ validacio del descripcion del producto"""
 
+        descr = input("Descripcion del producto: ")
+
+        if descr.isdigit():
+            print("La descripcion no puede ser un numero")
+            descr = None
+        elif not descr or descr.isspace():
+            print("La descripcion no puede estar vacia")
+            descr = None
+
+    while not valor:
+        """ validacio del valor del producto"""
+        
+        valor = input("Valor del producto: ")
+
+        if not valor.isdigit():
+            print("El valor debe ser un numero")
+            valor = None
+            continue
+
+        valor = int(valor)
+
+        if valor < 0:
+            print("El valor debe ser numero mayor a cero")
+            valor = None        
+
+    producto_nuevo  = {
+        "nombre":nombre,
+        "stock":stock,
+        "descripcion":descr,
+        "valor":valor
+    }
+
+    print(producto_nuevo)
 
     input("PRODUCTO CREADO!!!!! \nPresione cualquier tecla para continuar...")
 

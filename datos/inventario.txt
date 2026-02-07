@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Pizza Margarita",
+    "stock": 15,
+    "precio": 6500,
+    "descripcion": "Pizza clásica con queso mozzarella y salsa de tomate"
+  },
+  {
+    "nombre": "Pizza Pepperoni",
+    "stock": 12,
+    "precio": 7200,
+    "descripcion": "Pizza con abundante pepperoni y queso derretido"
+  },
+  {
+    "nombre": "Hamburguesa Clásica",
+    "stock": 20,
+    "precio": 5500,
+    "descripcion": "Hamburguesa con carne, lechuga, tomate y mayonesa"
+  },
+  {
+    "nombre": "Hamburguesa Doble Queso",
+    "stock": 10,
+    "precio": 6800,
+    "descripcion": "Hamburguesa doble carne con queso cheddar"
+  },
+  {
+    "nombre": "Papas Fritas Medianas",
+    "stock": 30,
+    "precio": 3000,
+    "descripcion": "Papas fritas crujientes tamaño mediano"
+  },
+  {
+    "nombre": "Papas Fritas Grandes",
+    "stock": 25,
+    "precio": 3800,
+    "descripcion": "Papas fritas crujientes tamaño grande"
+  },
+  {
+    "nombre": "Bebida Cola 350ml",
+    "stock": 40,
+    "precio": 1800,
+    "descripcion": "Bebida gaseosa sabor cola"
+  },
+  {
+    "nombre": "Bebida Naranja 350ml",
+    "stock": 35,
+    "precio": 1800,
+    "descripcion": "Bebida gaseosa sabor naranja"
+  },
+  {
+    "nombre": "Empanada de Queso",
+    "stock": 50,
+    "precio": 2000,
+    "descripcion": "Empanada frita rellena de queso"
+  },
+  {
+    "nombre": "Empanada de Pino",
+    "stock": 45,
+    "precio": 2200,
+    "descripcion": "Empanada tradicional chilena de pino"
+  }
+]

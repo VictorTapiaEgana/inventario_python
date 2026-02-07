@@ -1,15 +1,9 @@
 from funciones.crear_producto import crear_registro
 from ui.ventana import ventana
+from tkinter import *
+from funciones.inventario import cargar_inventario
 
-def seleccionar_menu(opcion, menu_items)->bool:    
-    # Check if option is available
-    if opcion == 2:  # Eliminar option
-        for item in menu_items:
-            if "2-. Eliminar un Registro" in item["texto"]:
-                if not item.get("disponible", True):
-                    print("❌ Opción no disponible en este momento")
-                    return True
-    
+def seleccionar_menu(opcion)->bool:        
     match opcion:
         case 1:
             crear_registro()
@@ -20,32 +14,26 @@ def seleccionar_menu(opcion, menu_items)->bool:
         case 3:
             print("VER")
             return  True
-        case _:           
-           return  False
+        case 4:           
+            print("Saliendo...\nAplicacion CERRADA!!!!")
+            return  False
+        case _:                       
+            return  True
 
 def main()->none:
-    # VARIABLES GLOBALES
+    #********************* VARIABLES GLOBALES******************
+    #Valida si se selecciono una opcion valida del menu inicial
     entrada: bool = True
-    """ Valida si se selecciono una opcion valida del menu inicial"""
+    inventario:list[dict[str,str | int]] = cargar_inventario()
+    #**********************************************************
     
-    inventario:list[dict[str,str | int]] = [] 
-    """
-    Estructura del inventario
-    [
-       {
-           "nombre": "Producto 1",
-           "stock": 10,
-           "precio": 100,
-           "descripcion":"Este es un producto "
-       },
-       {
-           "nombre": "Producto 2",
-           "stock": 20,
-           "precio": 200,
-           "descripcion":"Este es otro producto"
-       }
-    ]
-    """
+    
+    
+
+    print(inventario)
+    
+    
+
     while entrada == True:   
 
         menu = (
@@ -57,12 +45,15 @@ def main()->none:
             {"texto": "4-. SALIR [x]", "align": "left"},
             {"texto": "", "align": "center"}
         )        
-        ventana(menu)
-            
+        ventana(menu)           
 
+        opcion = input("Ingrese una opcion VALIDA:")
 
-        opcion = int(input("Ingrese el numero de una opcion:")) 
-        entrada = seleccionar_menu(opcion)
+        if opcion.isdigit():
+            opcion = int(opcion)
+            entrada = seleccionar_menu(opcion)
+        else:            
+            continue
         
         
 if __name__ == "__main__" : 
