@@ -1,0 +1,44 @@
+[
+    {
+        "nombre": "Hamburguesa Doble",
+        "descripcion": "Hamburguesa con doble carne y queso",
+        "precio": 4500,
+        "stock": 15
+    },
+    {
+        "nombre": "Pizza Pepperoni",
+        "descripcion": "Pizza familiar con pepperoni",
+        "precio": 8900,
+        "stock": 10
+    },
+    {
+        "nombre": "Nuggets de Pollo",
+        "descripcion": "Caja de 10 piezas de pollo frito",
+        "precio": 3200,
+        "stock": 30
+    },
+    {
+        "nombre": "Ensalada Cesar",
+        "descripcion": "Ensalada con pollo grillé y aderezo",
+        "precio": 3500,
+        "stock": 12
+    },
+    {
+        "nombre": "Hot Dog Especial",
+        "descripcion": "Completo con palta tomate y mayo",
+        "precio": 2200,
+        "stock": 40
+    },
+    {
+        "nombre": "Helado Vainilla",
+        "descripcion": "Pote de helado artesanal 500ml",
+        "precio": 2800,
+        "stock": 20
+    },
+    {
+        "nombre": "Sándwich de Pollo",
+        "descripcion": "Sándwich en pan integral con pollo",
+        "precio": 3900,
+        "stock": 18
+    }
+]

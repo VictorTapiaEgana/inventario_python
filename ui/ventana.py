@@ -1,13 +1,23 @@
 import os
 
-def ventana(contenido:int , ancho=79)->none():
+def ventana(menu:dict[str,str])->none():
+    
+    #Ancho maximo de la ventana
+    ancho:int = 79
 
-    #Limipia la consola , antes de ejecutar la ventana
+    #limpia la consola
     os.system('cls' if os.name == 'nt' else 'clear')
 
     print(f"╔{'═' * (ancho-2)}╗")
 
-    for palabra in contenido:    
-        print(f"║ {palabra.center(ancho-4)} ║")
+    for linea in menu:
+        
+        contenido = linea['texto']
+        alineacion = linea['align']
+
+        if alineacion == 'center':
+            print(f"║ {str(contenido.center(ancho-4))} ║")
+        else:
+            print(f"║ {str(contenido.ljust(ancho-4))} ║")
 
     print(f"╚{'═' * (ancho-2)}╝")
