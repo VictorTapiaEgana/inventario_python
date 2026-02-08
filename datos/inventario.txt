@@ -1,62 +1,44 @@
 [
     {
-        "nombre": "Pizza Margarita",
-        "stock": 15,
-        "precio": 6500,
-        "descripcion": "Pizza cl\u00c3\u00a1sica con queso mozzarella y salsa de tomate"
+        "nombre": "Hamburguesa Doble",
+        "descripcion": "Hamburguesa con doble carne y queso",
+        "precio": 4500,
+        "stock": 15
     },
     {
         "nombre": "Pizza Pepperoni",
-        "stock": 12,
-        "precio": 7200,
-        "descripcion": "Pizza con abundante pepperoni y queso derretido"
+        "descripcion": "Pizza familiar con pepperoni",
+        "precio": 8900,
+        "stock": 10
     },
     {
-        "nombre": "Hamburguesa Cl\u00c3\u00a1sica",
-        "stock": 20,
-        "precio": 5500,
-        "descripcion": "Hamburguesa con carne, lechuga, tomate y mayonesa"
+        "nombre": "Nuggets de Pollo",
+        "descripcion": "Caja de 10 piezas de pollo frito",
+        "precio": 3200,
+        "stock": 30
     },
     {
-        "nombre": "Hamburguesa Doble Queso",
-        "stock": 10,
-        "precio": 6800,
-        "descripcion": "Hamburguesa doble carne con queso cheddar"
+        "nombre": "Ensalada Cesar",
+        "descripcion": "Ensalada con pollo grillé y aderezo",
+        "precio": 3500,
+        "stock": 12
     },
     {
-        "nombre": "Papas Fritas Medianas",
-        "stock": 30,
-        "precio": 3000,
-        "descripcion": "Papas fritas crujientes tama\u00c3\u00b1o mediano"
-    },
-    {
-        "nombre": "Papas Fritas Grandes",
-        "stock": 25,
-        "precio": 3800,
-        "descripcion": "Papas fritas crujientes tama\u00c3\u00b1o grande"
-    },
-    {
-        "nombre": "Bebida Cola 350ml",
-        "stock": 40,
-        "precio": 1800,
-        "descripcion": "Bebida gaseosa sabor cola"
-    },
-    {
-        "nombre": "Bebida Naranja 350ml",
-        "stock": 35,
-        "precio": 1800,
-        "descripcion": "Bebida gaseosa sabor naranja"
-    },
-    {
-        "nombre": "Empanada de Queso",
-        "stock": 50,
-        "precio": 2000,
-        "descripcion": "Empanada frita rellena de queso"
-    },
-    {
-        "nombre": "Empanada de Pino",
-        "stock": 45,
+        "nombre": "Hot Dog Especial",
+        "descripcion": "Completo con palta tomate y mayo",
         "precio": 2200,
-        "descripcion": "Empanada tradicional chilena de pino"
-    } 
+        "stock": 40
+    },
+    {
+        "nombre": "Helado Vainilla",
+        "descripcion": "Pote de helado artesanal 500ml",
+        "precio": 2800,
+        "stock": 20
+    },
+    {
+        "nombre": "Sándwich de Pollo",
+        "descripcion": "Sándwich en pan integral con pollo",
+        "precio": 3900,
+        "stock": 18
+    }
 ]

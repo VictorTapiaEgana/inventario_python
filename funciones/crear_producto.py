@@ -20,8 +20,11 @@ def crear_registro()->none:
     while not nombre or nombre.isspace():
         """ Validacio del nombre del producto """
 
-        nombre = input("Nombre del producto: ")
+        nombre = input("Nombre del producto o 's' para salir: ")
 
+        if nombre.lower() == 's':
+            return
+        
         if nombre.isdigit():
             print("El nombre no puede ser un numero")
             nombre = None

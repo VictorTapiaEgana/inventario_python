@@ -1,7 +1,8 @@
-from funciones.crear_producto import crear_registro
+
 from ui.ventana import ventana
-from tkinter import *
-from funciones.inventario import cargar_inventario
+from funciones.crear_producto import crear_registro
+from funciones.eliminar_producto import eliminar_producto
+from funciones.mostrar_inventario import mostrar_inventario
 
 def seleccionar_menu(opcion)->bool:        
     match opcion:
@@ -9,10 +10,10 @@ def seleccionar_menu(opcion)->bool:
             crear_registro()
             return  True
         case 2:
-            print("ELIMINAR")
+            eliminar_producto()
             return  True
-        case 3:
-            print("VER")
+        case 3:            
+            mostrar_inventario()
             return  True
         case 4:           
             print("Saliendo...\nAplicacion CERRADA!!!!")
@@ -27,10 +28,6 @@ def main()->none:
     # inventario:list[dict[str,str | int]] = cargar_inventario()
     #**********************************************************    
 
-
-    
-    
-
     while entrada == True:   
 
         menu = (
@@ -39,7 +36,7 @@ def main()->none:
             {"texto": "1-. Crear Producto", "align": "left"},
             {"texto": "2-. Eliminar un producto", "align": "left"},
             {"texto": "3-. Ver Inventario", "align": "left"},
-            {"texto": "4-. SALIR [x]", "align": "left"},
+            {"texto": "4-. SALIR", "align": "left"},
             {"texto": "", "align": "center"}
         )        
         ventana(menu)           
